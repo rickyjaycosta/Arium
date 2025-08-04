@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arium Media - Social Media Marketing for Estate Agents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #4373ff, #11caff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fbff 0%, #e6f0ff 50%, #e0f5ff 100%);
+        }
+        .challenge-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            margin: 0 auto 1rem auto;
+            transition: all 0.3s ease;
+        }
+        .service-icon:hover {
+            transform: scale(1.1);
+        }
+        .cookie-banner {
+            position: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-out;
+        }
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header -->
+    <header class="absolute top-0 left-0 right-0 z-10 py-6">
+        <div class="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
+            <!-- Logo -->
+            <div>
+                <span class="text-2xl font-bold gradient-text">Arium Media</span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-gray-800 hover:text-[#4373ff] transition">Services</a>
+                <a href="/blog" target="_blank" 
+              
+                <a href="#contact" class="bg-gradient-to-r from-[#4373ff] to-[#11caff] text-white px-6 py-2 rounded-full text-lg font-semibold transition shadow-lg hover:opacity-90">
+                    Contact
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-32 md:py-48">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="gradient-text">Expert social media marketing</span><br>
+                    <span class="text-4xl md:text-6xl">for estate agents to drive leads</span>
+                </h1>
+                <p class="text-2xl text-gray-600 max-w-3xl mx-auto mb-10">
+                    We help estate agents build their brand, attract clients, and grow their business through strategic social media marketing.
+                </p>
+                <a href="#services" class="inline-flex items-center bg-gradient-to-r from-[#4373ff] to-[#11caff] text-white px-8 py-4 rounded-full text-lg font-semibold transition shadow-lg hover:opacity-90">
+                    Scale My Business <i class="fas fa-arrow-down ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section id="challenges" class="py-20 bg-white">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">The Challenges Estate Agents Face Every Day</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We understand the struggles you face in maintaining an effective social media presence, all whilst trying to balance the important things.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Challenge Card 1 -->
+                <div class="challenge-card bg-white p-6 rounded-xl border border-transparent shadow-me hover:border-200">
+                    <div class="text-red-500 mb-4">
+                        <i class="fas fa-calendar-times text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Struggling to keep consistency?</h3>
+                    <p class="text-gray-600">
+                        Inconsistent posting leads to lost engagement and missed opportunities, leaving your outreach to become non-existent.
+                    </p>
+                </div>
+                
+                <!-- Challenge Card 2 -->
+                <div class="challenge-card bg-white p-6 rounded-xl border border-transparent shadow-me hover:border-200">
+                    <div class="text-red-500 mb-4">
+                        <i class="fas fa-brain text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Running out of content ideas?</h3>
+                    <p class="text-gray-600">
+                        No new ideas means no new attention. You get forgotten, and chances to grow just disappear.
+                    </p>
+                </div>
+                
+                <!-- Challenge Card 3 -->
+                <div class="challenge-card bg-white p-6 rounded-xl border border-transparent shadow-me hover:border-200">
+                    <div class="text-red-500 mb-4">
+                        <i class="fas fa-hourglass-end text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">No time for what matters?</h3>
+                    <p class="text-gray-600">
+                        Too much to do means things get pushed aside, you risk losing clients who don't feel valued, you miss out on precious family moments.
+                    </p>
+                </div>
+                
+                <!-- Challenge Card 4 -->
+                <div class="challenge-card bg-white p-6 rounded-xl border border-transparent shadow-me hover:border-200">
+                    <div class="text-red-500 mb-4">
+                        <i class="fas fa-chart-pie text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">No return on your efforts?</h3>
+                    <p class="text-gray-600">
+                        Putting in the work but not seeing the leads and growth you expected, drains motivation. You deserve to see your brand make a positive impact.
+                    </p>
+                </div>
+                
+                <!-- Challenge Card 5 -->
+                <div class="challenge-card bg-white p-6 rounded-xl border border-transparent shadow-me hover:border-100">
+                    <div class="text-red-500 mb-4">
+                        <i class="fas fa-paint-brush text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Spending hours on designing?</h3>
+                    <p class="text-gray-600">
+                        Everyone wants visually appealing, professional content. But creating it takes time you could be using to grow your business.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex items-center gap-12">
+                <div class="lg:w-1/2 text-center mx-auto">
+                    <h2 class="text-3xl font-bold mb-6 gradient-text">What if you didn't have to do it alone?</h2>
+                    <p class="text-lg text-gray-600 mb-4 mx-auto">
+                       The pressure to stay visible, attract the right people and grow your business is heavy. Especially when it's all on your shoulders.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-4">
+                       Most agents aren't stuck because they're unmotivated, they're stuck because they're trying to do everything alone.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-4">
+                       No strategy. No system. Just hours of effort and constant burnout with little to show for it.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-4">
+                       What if you had someone who actually gets it, someone who can turn your ideas, your vision, and your daily grind into something that works? 
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Services Section - Key Strengths Style with Original White Background -->
+<section id="services" class="py-20 bg-white">
+  <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">How We help</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Strength 1 -->
+      <div class="flex items-start space-x-4">
+        <i class="fas fa-share-alt text-4xl text-blue-500"></i>
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-1">Social Media Management</h3>
+          <p class="text-sm text-gray-600">We plan your content, schedule your posts, and handle engagement so you can focus on closing deals.</p>
+        </div>
+      </div>
+
+      <!-- Strength 2 -->
+      <div class="flex items-start space-x-4">
+        <i class="fas fa-camera text-4xl text-blue-500"></i>
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-1">Photography & Videography</h3>
+          <p class="text-sm text-gray-600">High quality visuals that make your listings stand out and attract more clients.</p>
+        </div>
+      </div>
+
+      <!-- Strength 3 -->
+      <div class="flex items-start space-x-4">
+        <i class="fas fa-cut text-4xl text-blue-500"></i>
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-1">Video Editing</h3>
+          <p class="text-sm text-gray-600">Engaging videos that tell your property story and boost brand credibility and more.</p>
+        </div>
+      </div>
+
+      <!-- Strength 4 -->
+      <div class="flex items-start space-x-4">
+        <i class="fas fa-paint-brush text-4xl text-blue-500"></i>
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-1">Graphic Design</h3>
+          <p class="text-sm text-gray-600">Bespoke branding and social content tailored to resonate with your ideal audience.</p>
+        </div>
+      </div>
+
+      <!-- Strength 5 -->
+      <div class="flex items-start space-x-4">
+        <i class="fas fa-keyboard text-4xl text-blue-500"></i>
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-1">Copywriting</h3>
+          <p class="text-sm text-gray-600">Compelling captions and persuasive property descriptions designed to convert views into leads.</p>
+        </div>
+      </div>
+
+      <!-- Strength 6 -->
+      <div class="flex items-start space-x-4">
+        <i class="fas fa-chart-line text-4xl text-blue-500"></i>
+        <div>
+          <h3 class="text-lg font-bold text-gray-800 mb-1">Social Analytics</h3>
+          <p class="text-sm text-gray-600">Monthly reports and insights that help track performance and make smarter content decisions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Toggle Script -->
+<script>
+  document.querySelectorAll('.service-toggle-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.service-card');
+      const content = card.querySelector('.service-more');
+      const icon = button.querySelector('i');
+
+      // Toggle expanded state
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+      }
+    });
+  });
+</script>
+
+
+    <!-- Data Security Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Your Data Security is Our Priority</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Unlike other agencies, we’re actively building our own infrastructure to maintain full control and better protect your sensitive information.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-black-100 shadow-sm">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-server text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Dedicated Server Infrastructure</h3>
+                    <p class="text-gray-600">
+                        We're developing our own secure cloud environment, giving us direct control over how your data is stored, protected, and managed.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl border border-black-100 shadow-sm">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-lock text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">End-to-End Encryption</h3>
+                    <p class="text-gray-600">
+                        All client communications and data transfers are encrypted to ensure your data is fully protected.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl border border-black-100 shadow-sm">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Regular Security Audits</h3>
+                    <p class="text-gray-600">
+                        We regularly check, test, and tighten our systems to keep your data safe and stay one step ahead of security risks.
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-[#4373ff] to-[#11caff] text-white">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Scale without the extra work, let us do it for you.</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Focus on your clients and listings while we handle your social media presence professionally.
+            </p>
+            <a href="#contact" class="bg-white text-[#32a3ff] hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition shadow-lg inline-block">
+                Get Started Now
+            </a>
+        </div>
+    </section>
+
+   <!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Contact Us</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Have any questions, queries, concerns or just want to get right to work? Get in touch!
+            </p>
+        </div>
+        
+        <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-xl shadow-sm">
+            <form action="https://formsubmit.co/ricky@ariummedia.com" method="POST" class="space-y-6">
+                <!-- Optional: Redirect after submission -->
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                <!-- Optional: Disable CAPTCHA -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name*</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address*</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message*</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                
+                <div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-[#4373ff] to-[#11caff] text-white px-8 py-4 rounded-full text-lg font-semibold transition shadow-lg hover:opacity-90">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <span class="text-xl font-bold gradient-text">Arium Media</span>
+                <p class="text-gray-400 mt-2">Expert social media marketing for estate agents</p>
+            </div>
+            
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com/ariummedia/#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+            <p>Copyright © 2025 Arium Media - All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner bg-gray-800 text-white p-4">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <p class="mb-4 md:mb-0 text-sm md:text-base">
+                    We use cookies to analyse website traffic and optimise your website experience. 
+                    By accepting our use of cookies, your data will be aggregated with all other user data.
+                </p>
+                <div class="flex space-x-3">
+                    <button id="accept-cookies" class="bg-[#4373ff] hover:bg-[#3a66e6] text-white px-4 py-2 rounded text-sm font-medium">
+                        Accept
+                    </button>
+                    <button id="decline-cookies" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded text-sm font-medium">
+                        Decline
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Show cookie banner after delay
+        setTimeout(() => {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                document.getElementById('cookie-banner').classList.add('show');
+            }
+        }, 2000);
+
+        // Handle cookie acceptance
+        document.getElementById('accept-cookies').addEventListener('click', function() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookie-banner').classList.remove('show');
+        });
+
+        // Handle cookie decline
+        document.getElementById('decline-cookies').addEventListener('click', function() {
+            localStorage.setItem('cookiesDeclined', 'true');
+            document.getElementById('cookie-banner').classList.remove('show');
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=rjcosta/arium" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
