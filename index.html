@@ -117,8 +117,7 @@
             <div class="flex items-center gap-3">
                 <i class="fas fa-cookie-bite text-amber-500"></i>
                 <p class="text-sm text-gray-600">
-                    We use cookies to improve your experience and analyze site usage. 
-                    <a href="#" class="text-[#4373ff] underline">Learn more</a>
+                    We use cookies to improve your experience and analyse site usage.
                 </p>
             </div>
             <div class="flex gap-3">
@@ -553,31 +552,19 @@
         }
 
         // Form submission handlers
-        async function submitForm(formData) {
-            try {
-                const response = await fetch('/api/contact', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        ...formData,
-                        to: 'ricky@ariummedia.com'
-                    })
-                });
-                
-                if (response.ok) {
-                    closeModal();
-                    showThankYou();
-                    // Reset forms
-                    document.getElementById('mainContactForm').reset();
-                    document.getElementById('modalContactForm').reset();
-                } else {
-                    alert('There was an error sending your message. Please try again.');
-                }
-            } catch (error) {
-                alert('There was an error sending your message. Please try again.');
-            }
+        function submitForm(formData) {
+            const subject = `New Contact from ${formData.name}`;
+            const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0AMessage: ${formData.message}`;
+            const mailtoLink = `mailto:ricky@ariummedia.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            closeModal();
+            showThankYou();
+            // Reset forms
+            document.getElementById('mainContactForm').reset();
+            document.getElementById('modalContactForm').reset();
+            
+            // Open email client
+            window.location.href = mailtoLink;
         }
 
         // Main contact form
